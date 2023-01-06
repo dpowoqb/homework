@@ -1,5 +1,4 @@
-##homework 2##
-color cols[]={color(0), color(255), color(255, 0, 0), color(255, 255, 0), color(255, 255, 0), color(0, 0, 255)};
+color cols[]={color(0),color(0),color(0), color(255), color(255,255,0),color(255, 0, 0), color(255, 255, 0), color(0, 0, 255)};
 void setup() {
   size(500, 500);strokeWeight(3);
   int x=0, y=0;
