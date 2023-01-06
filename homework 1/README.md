@@ -1,20 +1,15 @@
-##homework 1##
+float a = 0;
+
 void setup() {
-  size(500, 500);
-  noStroke();
-  for (int i=0; i<50; i++) {
-    fill(random(255), random(255), random(255));
-    rect(0, i*10, 500, 10);
-  }
+  background(255);
+  size(1000,1000);
+  stroke(0, 10);
 }
+
 void draw() {
-}
-void keyPressed() {
-  if (key==' ') {
-    noStroke();
-    for (int i=0; i<50; i++) {
-      fill(random(255), random(255), random(255));
-      rect(0, i*10, 500, 10);
-    }
-  }
+  a = a + 0.01;
+  float n = noise(a) * width;
+  line(n, 0, n, height);
+  line(0,n,width,n);
+  strokeWeight(5);
 }
